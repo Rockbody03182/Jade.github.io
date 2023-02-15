@@ -1,0 +1,10 @@
+@charset "utf=8";
+
+.list1.on > img {opacity: 0}
+
+
+.list {cursor: pointer; margin-top: 13px !important}
+.list li {float: left; position: relative}
+.list li:nth-child(2) {opacity: 0}
+.list li:nth-child(3) {opacity: 0}
+.list li .sub-detail {position: absolute; left: -4px; top: -6px; display: none}

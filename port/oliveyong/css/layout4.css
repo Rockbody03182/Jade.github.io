@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*공통*/
+a{text-decoration: none; color: #333; font-size: 13px; font-weight: bold;font-family: "돋움","Dotum",sans-serif;}
+
+/*수직*/                        /*수직*/
+@media screen and (orientation:portrait){
+    .quick{margin: 10px;}
+    .quick li{line-height: 20px;}
+    .quick li a{
+        background: url("../images/bul_check_ap.png") no-repeat left center; padding-left: 20px;
+    }
+}
+/*수평*/                         /*수평*/
+@media screen and (orientation:landscape){
+    .quick{margin: 10px;}
+    .quick li{display: inline; margin: 0 10px;}
+    .quick li a{background: url("../images/icn_contact.jpg") no-repeat left center; padding-left: 20px;}
+}

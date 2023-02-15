@@ -1,0 +1,38 @@
+@font-face{
+    font-family: "NEXON Lv2 Gothic";
+    src: url("../font/NEXON_Lv2_Gothic.eot");
+        src: url("../font/NEXON_Lv2_Gothic.woff");
+        src: url("../font/NEXON_Lv2_Gothic?#iefix") format('embeded-opentype'),
+
+}
+@font-face{
+    font-family: "NEXON Lv2 Gothic Light";
+    src: url("../font/NEXON_Lv2_Gothic_Light.eot");
+        src: url("../font/NEXON_Lv2_Gothic_Light.woff");
+        src: url("../font/NEXON_Lv2_Gothic_Light?#iefix") format('embeded-opentype'),
+
+}
+@font-face{
+    font-family: "NEXON Lv2 Gothic Bold";
+    src: url("../font/NEXON_Lv2_Gothic_Bold.eot");
+        src: url("../font/NEXON_Lv2_Gothic_Bold.woff");
+        src: url("../font/NEXON_Lv2_Gothic_Bold?#iefix") format('embeded-opentype'),
+}
+@font-face {
+    font-family: 'JSDongkang-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-RegularA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'JSDongkang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/JSDongkang-BoldA1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NanumSquareRound';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

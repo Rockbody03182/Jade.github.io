@@ -1,0 +1,68 @@
+@charset "utf-8";
+@import url("top.css");
+@import url("bottom.css");
+
+/*reset*/
+a{text-decoration:none; color:inherit;}
+body{font:normal 12px/1.5em "돋움","Dotum" ,sans-serif; color:#333;}
+
+
+/*container*/
+#container{ width:1000px; margin:30px auto;}
+#main_img{width:1000px; height:226px; border:1px solid #ccc; box-sizing:border-box; position:relative;/*기준*/} /*박스모델크기 영향을 받지않는수식*/
+.m_img img{width:998px; height:224px;}
+.m_txt1, .m_txt2, .m_txt3{position:absolute; left:15px; z-index:2;}
+.m_txt1{top:20px; font-size:35px; font-weight:bold; line-height:1em; letter-spacing:-1px;}
+.m_txt1 span{display:block; color:#f32766;}
+.m_txt2{top:120px;}
+.m_txt2 span{font-weight:bold; border-left:1px solid #000; border-right:1px solid #000; padding:0 5px; margin:0 5px;}
+.m_txt3{top:170px; background:url("../images/arrow2.png") no-repeat left top; width:103px; height:25px; }
+.m_txt3 a{ display:block; line-height:25px; text-indent:1em; color:#fff;}
+.m_txt3 a:hover{color:#ccc;}
+
+#contents{width:1000px; height:480px; margin-top:20px; border-bottom:1px solid #e0233b; margin-bottom:30px;}/*float부모*/
+#con_left{width:203px; float:left;}/*float대상*/
+#con_left h2{background-color:#e0223c; color:#fff; width:203px; height:46px; text-indent:1em; line-height:46px; font-size:15px;}
+#con_left ul{width:203px; height:405px;}
+#con_left ul li{width:100px; height:30px; float:left; padding-top:70px; text-align:center; border:1px solid #ccc;}/*공통*/
+#con_left ul li.bg1{background:url("../images/blt_main4_1.png")no-repeat center 15px;}
+#con_left ul li.bg2{background:url("../images/blt_main4_2.png")no-repeat center 15px; border-left:none;}
+#con_left ul li.bg3{background:url("../images/blt_main4_3.png")no-repeat center 15px; border-top:none;}
+#con_left ul li.bg4{background:url("../images/blt_main4_4.png")no-repeat center 15px; border-left:none; border-top:none;}
+#con_left ul li.bg5{background:url("../images/blt_main4_5.png")no-repeat center 15px; border-top:none;}
+#con_left ul li.bg6{background:url("../images/blt_main4_6.png")no-repeat center 15px; border-left:none;  border-top:none;}
+#con_left ul li.bg7{background:url("../images/blt_main4_7.png")no-repeat center 15px; border-top:none;}
+#con_left ul li.bg8{background:url("../images/blt_main4_8.png")no-repeat center 15px; border-left:none;  border-top:none;}
+
+
+
+#con_center{width:490px; height:451px; float:left; margin-left:27px; border:1px solid #ccc; box-sizing:border-box; background-color:#FFF; position:relative;/*기준*/}/*float대상*/
+#con_center h2, .c_txt1{position:absolute; left:10px; z-index:2px;}
+#con_center h2{top:50px; font-size:18px; }
+#con_center h2 span{font-weight:normal;}
+.c_txt1{top:90px;}
+
+
+
+#con_right{width:252px; height:451px; float:right;}/*float대상*/
+#right1{width:250px; height:220px;border:1px solid #ccc; background-color:#FFF; position:relative;/*기준*/ margin-bottom:7px;}
+.r_txt1, .r_txt2, .r_txt3, .r_txt4{position:absolute; left:10px; z-index:2;}/*공통*/
+.r_txt1{top:20px; font-size:13px; color:#e0223c; letter-spacing:1px; }
+.r_txt2{top:35px; color:#c60;}
+.r_txt3{top:60px;}
+.r_txt4{top:80px; font-weight:bold;}
+
+#right2{width:250px; height:220px;border:1px solid #ccc; background-color:#FFF; position:relative;/*기준*/}
+.r_txt5{position:absolute; left:10px; top:15px; z-index:2;}
+
+#side{width:990px; overflow:hidden; margin:0 auto;}/*float부모*/
+#side div{width:230px; height:220px; border:1px solid #ccc; float:left; position:relative;}/*float대상*/
+#side #news1, #side #news2{margin-right:21px;}
+#news4{float:right; margin-left:20px;}
+#side div h3 {font-size:15px; margin:20px 0 10px 15px;/*상우하좌*/}
+p.news_img{text-align:center;}
+p.news_txt{margin-left:20px;}
+p.news_more{position:absolute; right:20px; top:20px; cursor:pointer;}
+ul.news_list li{background:url("../images/blt_list.png") no-repeat left center; padding-left:10px; margin-left:10px; width:200px; white-space:nowrap;/*축약*/
+overflow:hidden; text-overflow:ellipsis;}
+

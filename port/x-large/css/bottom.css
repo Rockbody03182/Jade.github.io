@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+/*#bottom_wrap*/
+#bottom_wrap{width:100%; border-top:1px solid #999;}
+#bottom{width:1000px; margin:20px auto;}
+#fnb{}
+#fnb li{display:inline; background:url("../images/bar.jpg") no-repeat left center; padding-left:15px; margin-left:5px; }
+#fnb li:first-child{background:none; padding-left:0; margin-left:0;}
+#fnb li a{}
+#fnb li a:hover{text-decoration:underline;}
+#bottom address{font-style:normal; }

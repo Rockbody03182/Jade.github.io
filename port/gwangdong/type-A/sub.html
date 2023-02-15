@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="resource/css/reset.css" type="text/css" rel="stylesheet">
+    <link href="resource/css/style.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resource/css/slick.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo"><img src="resource/img/logo.png" alt="로고" ></a>
+        <a href="sub.html" alt="검색결과" class="search_result"></a>
+        <img src="resource/img/header.png" alt="헤더" class="h_img">
+        <div class="header_cate_wrap"> 
+            <ul class="header_cate">
+                <li><a href="javascript:void(0);">주문상태 재구매</a></li>
+                <li><a href="javascript:void(0);">주문지원</a></li>
+                <li><a href="javascript:void(0);">마이페이지</a></li>
+                <li><a href="javascript:void(0);">장바구니</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="lnb_wrap">
+        <!-- <img src="/resource/img/" alt=""> -->
+        <ul>
+            <li class="active">
+                <a href="javascript:void(0);">
+                    <span class="sss">
+                    </span>
+                    <span class="bbb">상품카테고리</span>
+                </a>
+            </li>
+            <li><a href="javascript:void(0);"><span><img src="resource/img/lnb_cate02.png"></span><span>공급사별</span></a></li>
+            <li><a href="javascript:void(0);"><span><img src="resource/img/lnb_cate03.png"></span><span>광동제약관</span></a></li>
+            <li><a href="javascript:void(0);"><span><img src="resource/img/lnb_cate04.png"></span><span>브랜드관</span></a></li>
+            <li><a href="javascript:void(0);"><span><img src="resource/img/lnb_cate05.png"></span><span>세일존</span></a></li>
+            <li><a href="javascript:void(0);"><span><img src="resource/img/lnb_cate06.png"></span><span>이벤트</span></a></li>
+        </ul>
+        <div class="lnb_txt">
+            <img src="resource/img/lnb_txt.png">
+        </div>
+
+    </div>
+    <div class="cate_open">
+        <img src="resource/img/cate_open.png">
+    </div>
+    <div class="right_bar_wrap">
+        <ul>
+            <li><a href="javascript:void(0);"><img src="resource/img/right01.png"></a></li>
+            <li><a href="javascript:void(0);"><img src="resource/img/right02.png"></a></li>
+            <li><a href="javascript:void(0);"><img src="resource/img/right03.png"></a></li>
+            <li><a href="javascript:void(0);"><img src="resource/img/right04.png"></a></li>
+        </ul>
+    </div>
+    <div class="quick">
+        <img src="resource/img/floating.png">
+        <a href="" class="top_btn"></a>
+    </div>
+    <div class="sub">
+
+
+        <div class="sub_top">
+            <img src="resource/img/sub_top.png" alt="">
+        </div>
+
+
+        <div class="sub_con">
+            <div class="sub_click"></div>
+            <div class="sub_img1"><img src="resource/img/sub_cl_img1.png" alt=""></div>
+            <div class="sub_img2"><img src="resource/img/sub_cl_img2.png" alt=""></div>
+            <img src="resource/img/sub_con.png" alt="">
+        </div>
+        
+
+
+
+        <div class="footer">
+            <img src="resource/img/footer.png">
+        </div>
+    </div>
+    <div class="bg">
+
+    </div>
+</body>
+<script type="text/javascript" src="resource/js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="resource/js/slick.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script>
+    //slide
+    $('.slide').slick({
+        infinite: true,
+        dots: true,
+        arrows: false,
+    });
+
+    //lnb
+    $(".active").click(function(){
+        $(this).toggleClass("on");
+        if($(".active").hasClass("on")){
+            $(".cate_open").fadeIn();
+        }else{
+            $(".cate_open").fadeOut();
+        }
+    });
+
+    //popup
+    $(".section01_pop > img").click(function () {
+        $(".popup_open").fadeIn();
+    });
+    $(".popup_open > span").click(function () {
+        $(".popup_open").fadeOut();
+    });
+
+    //floating
+    var $quick = $('.quick');
+	var $win = $(window);
+	var top = $win.scrollTop();
+	var layerTopOffset = 0;
+	var speed          = 1000;
+
+	if (top > 0 )
+        $win.scrollTop(layerTopOffset+top);
+    else
+        $win.scrollTop(0);
+
+		$(window).scroll(function(){
+        yPosition = $win.scrollTop() + 600;
+        if (yPosition < 0)
+        {
+            yPosition = 0;
+        }
+        $quick.animate({"top":yPosition }, {duration:speed, queue:false});
+    });
+
+    //go top animation
+    $( '.top_btn' ).click( function() {
+	    $( 'html, body' ).animate( { scrollTop : 0 }, 400 );
+	return false;
+    });
+
+    //SUB
+    $(".sub_click").click( function() { 
+        $(".bg").fadeIn(300);
+        $(".sub_img1").fadeIn(500);
+
+        setTimeout(function() {
+            $(".sub_img2").fadeIn(500);
+        }, 1000);
+    });
+
+    $(".sub_img2").click( function() { 
+        $(".sub_img1, .sub_img2, .bg").fadeOut(500);
+    });
+    
+</script>
+</html>

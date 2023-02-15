@@ -1,0 +1,6 @@
+search box = 500 x 50
+sign in red box = 130x50
+font = 20 or 15 
+
+on the top red box = 80 height
+second blue box = 95 height

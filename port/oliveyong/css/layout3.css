@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+/*고정 이미지 => px
+p.main_img{width: 960px; height: 400px; margin: 10px auto;}
+p.main_img img{width: 960px; height: 400px;}*/
+
+/*가변이미지 => % */
+p.main_img{width: 95%; max-width:960px; height: 400px;  margin: 10px auto;}
+p.main_img img{width: 100%; max-width: 960px; min-width: 320px; height: auto; margin: 0 auto;}
+/*최대 960px, 최소320px 가로크기, 세로크기 자동조절*/

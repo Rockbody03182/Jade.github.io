@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*reset*/
+body{font: normal 15px/1.5em "돋움","Dotum",sans-serif;}
+
+/*해상도 960 이상 => 고정*/
+/*grid1*/
+@media all and (min-width:960px){
+    #wrap{width: 960px; margin: 10px auto;}
+.box{ width: 100%; overflow: hidden; margin: 10px 0;} /*float 해제, 상하 여백*/
+
+.list1, .list2, .list3, .list4, .list5, .list6, .list7, .list8, .list9, .list10, .list11, .list12{ float: left; margin-left: 10px; margin-right: 10px;}
+
+/*
+각각 영역계산
+계산 공식
+전체 가터(간격) 20* 12 = 240
+전체 칼럼(내용) 960 -240 =720
+1개 컬럼의 너비 720 / 12 = 60
+
+- 각각 width - (culumn 너비 * column)+ (Gutter너비 * (column-1))
+*/
+/*- 각각 width - (60 * column)+ (20 * (column-1))
+*/
+
+.list1{width: 60px;} /*(60 * 1)+ (20 * (1-1))*/
+.list2{width: 140px;} /* (60 * 2)+ (20 * (2-1))*/
+.list3{width: 220px;} /* (60 * 3)+ (20 * (3-1))*/
+.list4{width: 300px;} /* (60 * 4)+ (20 * (4-1))*/
+.list5{width: 380px;} /* (60 * 5)+ (20 * (5-1))*/
+.list6{width: 460px;} /* (60 * 6)+ (20 * (6-1))*/
+.list7{width: 540px;} /* (60 * 7)+ (20 * (7-1))*/
+.list8{width: 620px;} /* (60 * 8)+ (20 * (8-1))*/
+.list9{width: 700px;} /* (60 * 9)+ (20 * (9-1))*/
+.list10{width: 780px;} /* (60 * 10)+ (20 * (10-1))*/
+.list11{width: 860px;} /* (60* 11)+ (20 * (11-1))*/
+.list12{width: 940px;} /* (60 *12)+ (20 * (12-1))*/
+}
+
+/*해상도 768 ~ 959 => 동적*/
+/*grid2*/
+@media all and (min-width:768px) and (max-width:959px){
+    *wrap*/
+#wrap{width: 90%; margin: 10px auto;}
+.box{overflow: hidden; margin: 10px 0;}/*float 해제, 상하여백*/
+
+.list1, .list2, .list3, .list4, .list5, .list6, .list7, .list8, .list9, .list10, .list11, .list12{float: left; margin-left: 2%; }
+
+.box [class*="list"]:first-child{margin-left: 0;}
+/*.box 다음요소의 클래스명이 list를 포함하는 첫번째 항목의 왼쪽 여백을 0으로 변경*/
+.box img{width: 100%;}
+
+/*
+**각각의 영역 계산
+    전체가터(간격) 2% 11개 = 22%
+    전체컬럼(내용) 100% - 22% =78%
+    1개의 컬럼의 너비 78% / 12 = 6.5%
+    - 각각 width - (culumn 너비 * column)+ (Gutter너비 * (column-1))
+*/
+.list1{width: 6.5%;} /*(6.5 * 1)+ (2 * (1-1))*/
+.list2{width: 15%;} /* (6.5 * 2)+ (2 * (2-1))*/
+.list3{width: 23.5%;} /* (6.5 * 3)+ (2 * (3-1))*/
+.list4{width: 32%;} /* (6.5 * 4)+ (2 * (4-1))*/
+.list5{width: 40.5%;} /* (6.5 * 5)+ (2 * (5-1))*/
+.list6{width: 49%;} /* (6.5 * 6)+ (2 * (6-1))*/
+.list7{width: 57.5%;} /* (6.5 * 7)+ (2 * (7-1))*/
+.list8{width: 66%;} /* (6.5 * 8)+ (2 * (8-1))*/
+.list9{width: 74.5%;} /* (6.5 * 9)+ (2 * (9-1))*/
+.list10{width: 83%;} /* (6.5 * 10)+ (2 * (10-1))*/
+.list11{width:91.5%;} /* (6.5* 11)+ (2 * (11-1))*/
+.list12{width: 100%;} /* (6.5 *12)+ (2 * (12-1))*/
+}
+
+/*해상도 767이하*/
+/*css 추가 제장*/
+@media all and (max-width:767px){
+    #wrap{width: 90%; margin: 10px auto; ,min-width: 320px; }
+    .box{width: 100%; overflow: hidden;}
+    .list1, .list2, .list3, .list4, .list5, .list6, .list7, .list8, .list9, .list10, .list11, .list12{margin: 10px 0; }
+    .box img{width: 100%;}
+}

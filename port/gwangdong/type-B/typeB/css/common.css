@@ -1,0 +1,13 @@
+@charset "utf-8";
+
+/*common*/
+.clearfix::after , .clearfix::before {content: ""; display: block; clear: both}
+a {width: 100%; display: block}
+* {box-sizing: border-box}
+
+
+/*gnb-effect*/
+.header-wrap {position: relative}
+.header-wrap .gnb-bar{width: 1282px;position: absolute; left: 50%; top: 100px; transform: translate(-50%); z-index: 9999; cursor: pointer}
+
+
