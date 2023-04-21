@@ -471,6 +471,7 @@ input, textarea, select{
     margin-top: 10px;
 }
 .about .about-content .skills{
+/*    background-color: blue;background-color: blue;*/
     -webkit-flex: 0 0 40%;
     -ms-flex: 0 0 40%;
     flex: 0 0 40%;
@@ -483,11 +484,7 @@ input, textarea, select{
     flex: 0 0 100%;
     max-width:100%;
 }
-.about .about-content .skills .skill-item ul{
-    list-style: none;
-    text-decoration: none;
-}
-/* .about .about-content .skills .skill-item h5{
+.about .about-content .skills .skill-item h5{
     line-height: 40px;
     font-weight: 600;
     font-size:16px;
@@ -513,13 +510,14 @@ input, textarea, select{
     border-radius: 4px;
 }
 .about .about-content .skills .skill-item .progress .skill-percent{
+/*    display:none;*/
     line-height: 40px;
     position: absolute;
     right: 0;
     color:#302e4d;
     top: -40px;
     font-weight: 400;
-} */
+}
 .about .about-content .education{
     -webkit-flex: 0 0 50%;
     -ms-flex: 0 0 50%;

@@ -1,286 +1,288 @@
-<!DOCTYPE html>
-<html lang="ko">
+ <!DOCTYPE html>
+ <html lang="ko">
 
-<head>
-    <title>Jade's Portfolio</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- css -->
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
+ <head>
+     <title>Jade's Portfolio</title>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!-- css -->
+     <link rel="stylesheet" href="css/style.css" type="text/css">
+     <link rel="stylesheet" href="css/skins/pink.css" type="text/css">
 
-    <!--  Live Style Switcher  -->
-    <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled>
-    <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
-    <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
-    <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
-    <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
-    <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
-    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
-    <!-- Email -->
+     <!--  Live Style Switcher  -->
+     <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled>
+     <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" disabled>
+     <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
+     <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
+     <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
+     <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
+     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> -->
+     <!-- Email -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function () {
+        (function() {
             emailjs.init("user_1DSJpPbKBd7BzvHVwJ6Sw");
         })();
     </script>
 
-</head>
+ </head>
 
-<body>
+ <body>
 
-    <!--    Preloader-->
-    <div class="preloader">
-        <div class="loader"></div>
-    </div>
-    <!--    Preloader End-->
+     <!--    Preloader-->
+     <div class="preloader">
+         <div class="loader"></div>
+     </div>
+     <!--    Preloader End-->
 
-    <!--Main Container-->
-    <div class="main-container">
-        <!--   Aside     -->
-        <div class="aside">
-            <!--Logo-->
-            <div class="logo">
-                <a href="/index.html">Jade</a>
-            </div>
-            <!--            Nav Toggler Btn-->
-            <div class="nav-toggler">
-                <span></span>
-            </div>
-            <!-- Nav-->
-            <ul class="nav">
-                <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-                <li><a href="#sideproject"><i class="fa fa-list"></i> Side Project</a></li>
-                <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-                <li><a href="#project"><i class="fa fa-envelope"></i> Project</a></li>
-                <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
-            </ul>
-            <!-- Copyright-->
-            <div class="copyright-text">
-                &copy; 2021 Paul
-            </div>
-        </div>
-        <!--   Aside End    -->
-        <!--   Main Content      -->
-        <div class="main-content">
-            <!--            Home Section-->
-            <section class="home section active" id="home">
-                <div class="container">
-                    <div class="intro">
-                        <img src="images/about.png" alt="profile" class="shadow-dark">
-                        <h1>Jang Won Yong</h1>
-                        <p>I'm Web Developer</p>
-                        <div class="social-links">
-                            <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
-                            <a href="https://www.facebook.com/profile.php?id=100022651552828" target="_blank"><i
-                                    class="fa fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/yesway93/?hl=ko" target="_blank"><i
-                                    class="fa fa-instagram"></i></a>
-                            <a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--            Home Section End-->
-            <!--   About Section    -->
-            <section class="about section" id="about">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>About Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="about-content padd-15">
-                            <div class="row">
-                                <div class="about-text padd-15">
-                                    <h3>I'm Jade and <span>Web Developer.</span></h3>
-                                    <p>
-                                        안녕하세요! 웹 개발자로 활동하고 있는 장원용입니다. <br>짧은 경력이지만 경험을 토대로 장점을 살리고 단점을 보완하며 앞으로 나아가고
-                                        싶습니다.<br> 항상 따뜻하고 따끔한 진심어린 조언은 언제나 환영입니다.
-                                        잘 부탁 드립니다.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="personal-info padd-15">
-                                    <div class="row">
-                                        <div class="info-item padd-15">
-                                            <p>생년월일 : <span>1993.11.18</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>나이 : <span>31</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>포트폴리오 : <span><a class="gogo"
-                                                        href="http://jade93.dothome.co.kr/">바로가기</a></span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>이메일 : <span>gasina85@gmail.com</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>
-                                                경력 : <span>3년</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>연락처 : <span>010 2474 6795</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>사는곳 : <span>서울특별시 신림동</span></p>
-                                        </div>
-                                        <div class="info-item padd-15">
-                                            <p>상태 : <span>구직중</span></p>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="buttons padd-15">
-                                            <a href="/images/cv.pdf" class="btn" download>Download CV</a>
-                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="skills padd-15">
-                                    <div class="row">
-                                        <div class="skill-item padd-15">
-                                            <ul>
-                                                <li>HTML5</li>
-                                                <li>CSS3</li>
-                                                <li>Javascript</li>
-                                                <li>JQuery</li>
-                                                <li>React</li>
-                                                <li>Next.JS</li>
-                                                <li>Node.JS</li>
-                                                <li>Laravel</li>
-                                                <li>MySQL</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+     <!--Main Container-->
+     <div class="main-container">
+         <!--   Aside     -->
+         <div class="aside">
+             <!--Logo-->
+             <div class="logo">
+                 <a href="/index.html">Jade</a>
+             </div>
+             <!--            Nav Toggler Btn-->
+             <div class="nav-toggler">
+                 <span></span>
+             </div>
+             <!-- Nav-->
+             <ul class="nav">
+                 <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
+                 <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+                 <li><a href="#services"><i class="fa fa-list"></i> Service</a></li>
+                 <li><a href="#portfolio"><i class="fa fa-briefcase"></i> Portfolio</a></li>
+                 <li><a href="#project"><i class="fa fa-envelope"></i> Project</a></li>
+                 <li><a href="#contact"><i class="fa fa-comments"></i> Contact</a></li>
+             </ul>
+             <!-- Copyright-->
+             <div class="copyright-text">
+                 &copy; 2021 Paul
+             </div>
+         </div>
+         <!--   Aside End    -->
+         <!--   Main Content      -->
+         <div class="main-content">
+             <!--            Home Section-->
+             <section class="home section active" id="home">
+                 <div class="container">
+                     <div class="intro">
+                         <img src="images/about.png" alt="profile" class="shadow-dark">
+                         <h1>Jang Won Yong</h1>
+                         <p>I'm Web Developer</p>
+                         <div class="social-links">
+                             <a href="javascript:void(0)"><i class="fa fa-twitter"></i></a>
+                             <a href="https://www.facebook.com/profile.php?id=100022651552828" target="_blank"><i class="fa fa-facebook"></i></a>
+                             <a href="https://www.instagram.com/yesway93/?hl=ko" target="_blank"><i class="fa fa-instagram"></i></a>
+                             <a href="javascript:void(0)"><i class="fa fa-linkedin"></i></a>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+             <!--            Home Section End-->
+             <!--   About Section    -->
+             <section class="about section" id="about">
+                 <div class="container">
+                     <div class="row">
+                         <div class="section-title padd-15">
+                             <h2>About Me</h2>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="about-content padd-15">
+                             <div class="row">
+                                 <div class="about-text padd-15">
+                                     <h3>I'm Jade and <span>Web Publisher.</span></h3>
+                                     <p>안녕하세요! 웹 퍼블리셔로 활동하고 있는 장원용입니다. <br>짧은 경력이지만 경험을 토대로 장점을 살리고 단점을 보완하며 앞으로 나아가고 싶습니다.<br> 항상 따뜻하고 따끔한 진심어린 조언은 언제나 환영입니다.
+                                         잘 부탁 드립니다.</p>
+                                     <!--                                    <p>Hi! My name is Upvesh Kumar. I am a Web Developer, and I'm very passionate and dedicated to my work. With 10 years experience as a professional Web developer, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the design process, from discussion and collaboration. </p>-->
+                                 </div>
+                             </div>
+                             <div class="row">
+                                 <div class="personal-info padd-15">
+                                     <div class="row">
+                                         <div class="info-item padd-15">
+                                             <p>생년월일 : <span>1993.11.18</span></p>
+                                         </div>
+                                         <div class="info-item padd-15">
+                                             <p>나이 : <span>29</span></p>
+                                         </div>
+                                         <div class="info-item padd-15">
+                                             <p>포트폴리오 : <span><a class="gogo"href="http://jade93.dothome.co.kr/">바로가기</a></span></p>
+                                         </div>
+                                         <div class="info-item padd-15">
+                                             <p>이메일 : <span>gasina85@gmail.com</span></p>
+                                         </div>
+                                         <div class="info-item padd-15">
+                                             <p>
+                                                 경력 : <span>1년 6개월</span></p>
+                                         </div>
+                                         <div class="info-item padd-15">
+                                             <p>연락처 : <span>010 2474 6795</span></p>
+                                         </div>
+                                         <div class="info-item padd-15">
+                                             <p>사는곳 : <span>서울특별시 신림동</span></p>
+                                         </div>
+                                         <div class="info-item padd-15">
+                                             <p>상태 : <span>구직중</span></p>
+                                         </div>
+                                     </div>
+                                     <div class="row">
+                                         <div class="buttons padd-15">
+                                             <a href="/images/cv.pdf"  class="btn" download>Download CV</a>
+                                             <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="skills padd-15">
+                                     <div class="row">
+                                         <div class="skill-item padd-15">
+                                             <h5>Javascript</h5>
+                                             <div class="progress">
+                                                 <div class="progress-in" style="width:76%"></div>
+                                                 <div class="skill-percent">76%</div>
+                                             </div>
+                                         </div>
+                                         <div class="skill-item padd-15">
+                                             <h5>Photoshop</h5>
+                                             <div class="progress">
+                                                 <div class="progress-in" style="width:47%"></div>
+                                                 <div class="skill-percent">47%</div>
+                                             </div>
+                                         </div>
+                                         <div class="skill-item padd-15">
+                                             <h5>Jquery</h5>
+                                             <div class="progress">
+                                                 <div class="progress-in" style="width:80%"></div>
+                                                 <div class="skill-percent">80%</div>
+                                             </div>
+                                         </div>
+                                         <div class="skill-item padd-15">
+                                             <h5>Bootstrap</h5>
+                                             <div class="progress">
+                                                 <div class="progress-in" style="width:60%"></div>
+                                                 <div class="skill-percent">60%</div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
 
-                            <div class="row">
-                                <div class="education padd-15">
-                                    <h3 class="title">교육</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!--                                              Timeline- Item-->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar">2013.12 - 2015.12</i>
-                                                    </h6>
-                                                    <h4 class="timeline-title">공군 특수임무대 SDT 전역</h4>
-                                                    <p class="timeline-text">
-                                                        -진주 대태러 집체교육 2회<br>
-                                                        -청주 헬기레펠 4회<br>
-                                                        -광주 대태러 초동조치 707 교육 수료 1회<br>
-                                                        -진주 SDT 경연대회(CQB/CQC, Repel, 대태러사격, 체력)2회<br>
-                                                        -강한 체력과 정신력을 바탕으로 사회활동을 할 수있다.
-                                                    </p>
-                                                </div>
-                                                <!--                                            Timeline Item End    -->
-                                                <!--                                              Timeline- Item-->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar">2018.10 - 2019.02</i>
-                                                    </h6>
-                                                    <h4 class="timeline-title">이젠컴퓨터 UI/UX 엔지니어링 양성과정 수료</h4>
-                                                    <p class="timeline-text">
-                                                        사용자 리서치 자료를 토대로 사용자의 요구사항을 파악하고 기획된 아이디어를 신속하게 만들어서 시각화하여 테스트하고,
-                                                        UI/UX 분석 결과를 바탕으로 UI/UX 콘셉트를 도출하고 기능 및 콘텐츠를 정의하며, 기획된 콘셉트를 바탕으로
-                                                        디자인과 구현을 위한 콘텐츠, 정보, 와이어 프레임, 태스크 플로우를 설계하고, UI 아키텍처 설계 후 시각적인
-                                                        요소를 디자인하기 위해 비주얼 디자인 콘셉트를 도출하며 이 콘셉트에 근거하여 GUI를 상세 디자인하며, GUI
-                                                        디자인 가이드를 바탕으로 UI 구현 표준을 수립하고 UI를 제작하며, 구현된 UI를 검증하기 위하여 사용성 테스트
-                                                        계획, 수행, 분석, 결과 보고를 수행하는 능력을 함양한다.
-                                                    </p>
-                                                </div>
-                                                <!--                                            Timeline Item End    -->
-                                                <!--                                              Timeline- Item-->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar">2019.06 - 2019.08</i>
-                                                    </h6>
-                                                    <h4 class="timeline-title">오라클 자바교육원 웹 스프링 개발 향상과정 수료</h4>
-                                                    <p class="timeline-text">
-                                                        자바 기초부터 웹 스프링 개발
-                                                        향상과정(JAVA/JDBC/Servlet/JSP/Ajax/jQuery/Spring/JPA)<br>
-                                                        - 웹 개발 환경에 대해서 이해한다.(eclipse,apache, tomcat)<br>
-                                                        - 자바웹 개발(JSP, Servlet) 능력 강화<br>
-                                                        - 자바 라이브러리를 활용한 응용프로그램 개발<br>
-                                                        - jQUERY를 이용한 UI 개발에 대한 이해<br>
-                                                        - 스프링DI/AOP의 기본개념을 이해할 수 있다.<br>
-                                                    </p>
-                                                </div>
-                                                <!--                                            Timeline Item End    -->
+                             <div class="row">
+                                 <div class="education padd-15">
+                                     <h3 class="title">교육</h3>
+                                     <div class="row">
+                                         <div class="timeline-box padd-15">
+                                             <div class="timeline shadow-dark">
+                                                 <!--                                              Timeline- Item-->
+                                                 <div class="timeline-item">
+                                                     <div class="circle-dot"></div>
+                                                     <h6 class="timeline-date">
+                                                         <i class="fa fa-calendar">2013.12 - 2015.12</i>
+                                                     </h6>
+                                                     <h4 class="timeline-title">공군 특수임무대 SDT 전역</h4>
+                                                     <p class="timeline-text">
+                                                         -진주 대태러 집체교육 2회<br>
+                                                         -청주 헬기레펠 4회<br>
+                                                         -광주 대태러 초동조치 707 교육 수료 1회<br>
+                                                         -진주 SDT 경연대회(CQB/CQC, Repel, 대태러사격, 체력)2회<br>
+                                                         -강한 체력과 정신력을 바탕으로 사회활동을 할 수있다.
+                                                     </p>
+                                                 </div>
+                                                 <!--                                            Timeline Item End    -->
+                                                 <!--                                              Timeline- Item-->
+                                                 <div class="timeline-item">
+                                                     <div class="circle-dot"></div>
+                                                     <h6 class="timeline-date">
+                                                         <i class="fa fa-calendar">2018.10 - 2019.02</i>
+                                                     </h6>
+                                                     <h4 class="timeline-title">이젠컴퓨터 UI/UX 엔지니어링 양성과정 수료</h4>
+                                                     <p class="timeline-text">
+                                                         사용자 리서치 자료를 토대로 사용자의 요구사항을 파악하고 기획된 아이디어를 신속하게 만들어서 시각화하여 테스트하고, UI/UX 분석 결과를 바탕으로 UI/UX 콘셉트를 도출하고 기능 및 콘텐츠를 정의하며, 기획된 콘셉트를 바탕으로 디자인과 구현을 위한 콘텐츠, 정보, 와이어 프레임, 태스크 플로우를 설계하고, UI 아키텍처 설계 후 시각적인 요소를 디자인하기 위해 비주얼 디자인 콘셉트를 도출하며 이 콘셉트에 근거하여 GUI를 상세 디자인하며, GUI 디자인 가이드를 바탕으로 UI 구현 표준을 수립하고 UI를 제작하며, 구현된 UI를 검증하기 위하여 사용성 테스트 계획, 수행, 분석, 결과 보고를 수행하는 능력을 함양한다.
+                                                     </p>
+                                                 </div>
+                                                 <!--                                            Timeline Item End    -->
+                                                 <!--                                              Timeline- Item-->
+                                                 <div class="timeline-item">
+                                                     <div class="circle-dot"></div>
+                                                     <h6 class="timeline-date">
+                                                         <i class="fa fa-calendar">2019.06 - 2019.08</i>
+                                                     </h6>
+                                                     <h4 class="timeline-title">오라클 자바교육원 웹 스프링 개발 향상과정 수료</h4>
+                                                     <p class="timeline-text">
+                                                         자바 기초부터 웹 스프링 개발 향상과정(JAVA/JDBC/Servlet/JSP/Ajax/jQuery/Spring/JPA)<br>
+                                                         - 웹 개발 환경에 대해서 이해한다.(eclipse,apache, tomcat)<br>
+                                                         - 자바웹 개발(JSP, Servlet) 능력 강화<br>
+                                                         - 자바 라이브러리를 활용한 응용프로그램 개발<br>
+                                                         - jQUERY를 이용한 UI 개발에 대한 이해<br>
+                                                         - 스프링DI/AOP의 기본개념을 이해할 수 있다.<br>
+                                                     </p>
+                                                 </div>
+                                                 <!--                                            Timeline Item End    -->
 
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="experience padd-15">
-                                    <h3 class="title">경력</h3>
-                                    <div class="row">
-                                        <div class="timeline-box padd-15">
-                                            <div class="timeline shadow-dark">
-                                                <!--                                              Timeline- Item-->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar">2019.04 - 2019.07</i>
-                                                    </h6>
-                                                    <h4 class="timeline-title">용된다 자사 오피셜 사이트</h4>
-                                                    <p class="timeline-text">
-                                                        -HTML, CSS, Jquery 으로 구현<br>
-                                                        -Spring boot 구조로써 반응형으로 제작<br>
-                                                        -Scroll animation, Swiper animaition 등 스크립트 적용<br>
-                                                        -Media query 적용<br>
-                                                        -https://www.yddshop.co.kr/official
-                                                    </p>
-                                                </div>
-                                                <!--                                            Timeline Item End    -->
-                                                <!--                                              Timeline- Item-->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar">2019.07 - 2019.12</i>
-                                                    </h6>
-                                                    <h4 class="timeline-title">용된다 자체 쇼핑몰 사이트</h4>
-                                                    <p class="timeline-text">
-                                                        -Spring boot 구조로 제작<br>
-                                                        -PC 화면과 Mobile 화면을 나누어 진행<br>
-                                                        -Zeplin으로 디자이너와 개발자 협업<br>
-                                                        -Chrome, IE 9-11, Firefox, Safari에 적용 <br>
-                                                        -데이터베이스의 흐름을 파악 후 프런트 개발을 주로 진행 spring boot 프로젝트로 JQuery, AJAX,
-                                                        JSP 등을 통해 구현<br>
-                                                        -소셜로그인(카카오) 배송 API 연동<br>
-                                                        -하이브리드 앱의 웹 부분을 담당하여 OS 차이에 맞게 CSS, JQuery 등 대응하였으며 Useragaent로
-                                                        나눠 기능추가로 프로젝트 완료.
-                                                    </p>
-                                                </div>
-                                                <!--                                            Timeline Item End    -->
-                                                <!--                                              Timeline- Item-->
-                                                <div class="timeline-item">
-                                                    <div class="circle-dot"></div>
-                                                    <h6 class="timeline-date">
-                                                        <i class="fa fa-calendar">2019.09 - 2019.12</i>
-                                                    </h6>
-                                                    <h4 class="timeline-title">용된다 쇼핑몰 관리자 사이트</h4>
-                                                    <p class="timeline-text">
-                                                        -Spring boot 구조로 제작<br>
-                                                        -디자인 시안을 통해 HTML, CSS 등으로 퍼블리싱 진행<br>
-                                                        -JQuery, AJAX, JSP 등으로 화면단 개발<br>
-                                                        -테스트 기간중 간단한 DB 쿼리 DML(INSERT, UPDATE, DELETE) 수정<br>
-                                                        -오피셜사이트, 쇼핑몰사이트, 관리자사이트 동시 배포<br>
-                                                    </p>
-                                                </div>
-                                                <!--                                            Timeline Item End    -->
-                                                <!--                                              Timeline- Item-->
-                                                <div class="timeline-item">
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="experience padd-15">
+                                     <h3 class="title">경력</h3>
+                                     <div class="row">
+                                         <div class="timeline-box padd-15">
+                                             <div class="timeline shadow-dark">
+                                                 <!--                                              Timeline- Item-->
+                                                 <div class="timeline-item">
+                                                     <div class="circle-dot"></div>
+                                                     <h6 class="timeline-date">
+                                                         <i class="fa fa-calendar">2019.04 - 2019.07</i>
+                                                     </h6>
+                                                     <h4 class="timeline-title">용된다 자사 오피셜 사이트</h4>
+                                                     <p class="timeline-text">
+                                                         -HTML, CSS, Jquery 으로 구현<br>
+                                                         -Spring boot 구조로써 반응형으로 제작<br>
+                                                         -Scroll animation, Swiper animaition 등 스크립트 적용<br>
+                                                         -Media query 적용<br>
+                                                         -https://www.yddshop.co.kr/official
+                                                     </p>
+                                                 </div>
+                                                 <!--                                            Timeline Item End    -->
+                                                 <!--                                              Timeline- Item-->
+                                                 <div class="timeline-item">
+                                                     <div class="circle-dot"></div>
+                                                     <h6 class="timeline-date">
+                                                         <i class="fa fa-calendar">2019.07 - 2019.12</i>
+                                                     </h6>
+                                                     <h4 class="timeline-title">용된다 자체 쇼핑몰 사이트</h4>
+                                                     <p class="timeline-text">
+                                                         -Spring boot 구조로 제작<br>
+                                                         -PC 화면과 Mobile 화면을 나누어 진행<br>
+                                                         -Zeplin으로 디자이너와 개발자 협업<br>
+                                                         -Chrome, IE 9-11, Firefox, Safari에 적용 <br>
+                                                         -데이터베이스의 흐름을 파악 후 프런트 개발을 주로 진행 spring boot 프로젝트로 JQuery, AJAX, JSP 등을 통해 구현<br>
+                                                         -소셜로그인(카카오) 배송 API 연동<br>
+                                                         -하이브리드 앱의 웹 부분을 담당하여 OS 차이에 맞게 CSS, JQuery 등 대응하였으며 Useragaent로 나눠 기능추가로 프로젝트 완료.
+                                                     </p>
+                                                 </div>
+                                                 <!--                                            Timeline Item End    -->
+                                                 <!--                                              Timeline- Item-->
+                                                 <div class="timeline-item">
+                                                     <div class="circle-dot"></div>
+                                                     <h6 class="timeline-date">
+                                                         <i class="fa fa-calendar">2019.09 - 2019.12</i>
+                                                     </h6>
+                                                     <h4 class="timeline-title">용된다 쇼핑몰 관리자 사이트</h4>
+                                                     <p class="timeline-text">
+                                                         -Spring boot 구조로 제작<br>
+                                                         -디자인 시안을 통해 HTML, CSS 등으로 퍼블리싱 진행<br>
+                                                         -JQuery, AJAX, JSP 등으로 화면단 개발<br>
+                                                         -테스트 기간중 간단한 DB 쿼리 DML(INSERT, UPDATE, DELETE) 수정<br>
+                                                         -오피셜사이트, 쇼핑몰사이트, 관리자사이트 동시 배포<br>
+                                                     </p>
+                                                 </div>
+                                                 <!--                                            Timeline Item End    -->
+                                                 <!--                                              Timeline- Item-->
+                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h6 class="timeline-date">
                                                         <i class="fa fa-calendar">2020.11 - 2021.02</i>
@@ -296,8 +298,8 @@
                                                     </p>
                                                 </div>
                                                 <!--                                            Timeline Item End    -->
-                                                <!--                                              Timeline- Item-->
-                                                <div class="timeline-item">
+                                                 <!--                                              Timeline- Item-->
+                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h6 class="timeline-date">
                                                         <i class="fa fa-calendar">2020.11 - 2021.03</i>
@@ -309,8 +311,8 @@
                                                     </p>
                                                 </div>
                                                 <!--                                            Timeline Item End    -->
-                                                <!--                                              Timeline- Item-->
-                                                <div class="timeline-item">
+                                                 <!--                                              Timeline- Item-->
+                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h6 class="timeline-date">
                                                         <i class="fa fa-calendar">2021.03 - 2021.04</i>
@@ -321,8 +323,8 @@
                                                     </p>
                                                 </div>
                                                 <!--                                            Timeline Item End    -->
-                                                <!--                                              Timeline- Item-->
-                                                <div class="timeline-item">
+                                                 <!--                                              Timeline- Item-->
+                                                 <div class="timeline-item">
                                                     <div class="circle-dot"></div>
                                                     <h6 class="timeline-date">
                                                         <i class="fa fa-calendar">2021.04 - 2021.04</i>
@@ -335,256 +337,326 @@
                                                     </p>
                                                 </div>
                                                 <!--                                            Timeline Item End    -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!--   About Section End    -->
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </section>
+             <!--   About Section End    -->
 
-            <!--        Service Section-->
-            <section class="service section" id="sideproject">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Side Project</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!--                       Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon"><i class="fa fa-laptop"></i></div>
-                                <h4>Web Design</h4>
-                                <p>변화될 트랜드에 항상 자연스럽고 쉬운 디자인을 추구합니다.</p>
-                            </div>
-                        </div>
-                        <!--                        Service Item End-->
-                        <!--                       Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner ">
-                                <div class="icon"><i class="fa fa-photo"></i></div>
-                                <h4>Photoshop</h4>
-                                <p>간단한 수정, 디테일이미지, 레이아웃 등을 표현할 수 있습니다.</p>
-                            </div>
-                        </div>
-                        <!--                        Service Item End-->
-                        <!--                       Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon"><i class="fa fa-code"></i></div>
-                                <h4>Web Development</h4>
-                                <p>HTML,CSS,JAVASCRIPT,JQUERY을 통해 시안과 똑같이 구현할 수 있습니다.</p>
-                            </div>
-                        </div>
-                        <!--                        Service Item End-->
-                        <!--                       Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon"><i class="fa fa-handshake-o"></i></div>
-                                <h4>Cooperation</h4>
-                                <p>SVN, Zeplin등을 통해 프로젝트에 원활이 협업할 수있습니다.</p>
-                            </div>
-                        </div>
-                        <!--                        Service Item End-->
-                        <!--                       Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon"><i class="fa fa-users"></i></div>
-                                <h4>Teamwork</h4>
-                                <p>의견을 잘 조율하고 타협해서 가고자하는 목표에 차질 없이 갈 수있습니다.</p>
-                            </div>
-                        </div>
-                        <!--                        Service Item End-->
-                        <!--                       Service Item-->
-                        <div class="service-item padd-15">
-                            <div class="service-item-inner">
-                                <div class="icon"><i class="fa fa-signal"></i></div>
-                                <h4>Infinite Ability</h4>
-                                <p>한 포지션에 머무르지 않고 다재다능하게 능력을 발휘 할 수있습니다.</p>
-                            </div>
-                        </div>
-                        <!--                        Service Item End-->
-                    </div>
-                </div>
-            </section>
-            <!--        Service Section End-->
+             <!--        Service Section-->
+             <section class="service section" id="services">
+                 <div class="container">
+                     <div class="row">
+                         <div class="section-title padd-15">
+                             <h2>Service</h2>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <!--                       Service Item-->
+                         <div class="service-item padd-15">
+                             <div class="service-item-inner">
+                                 <div class="icon"><i class="fa fa-laptop"></i></div>
+                                 <h4>Web Design</h4>
+                                 <p>변화될 트랜드에 항상 자연스럽고 쉬운 디자인을 추구합니다.</p>
+                             </div>
+                         </div>
+                         <!--                        Service Item End-->
+                         <!--                       Service Item-->
+                         <div class="service-item padd-15">
+                             <div class="service-item-inner ">
+                                 <div class="icon"><i class="fa fa-photo"></i></div>
+                                 <h4>Photoshop</h4>
+                                 <p>간단한 수정, 디테일이미지, 레이아웃 등을 표현할 수 있습니다.</p>
+                             </div>
+                         </div>
+                         <!--                        Service Item End-->
+                         <!--                       Service Item-->
+                         <div class="service-item padd-15">
+                             <div class="service-item-inner">
+                                 <div class="icon"><i class="fa fa-code"></i></div>
+                                 <h4>Web Development</h4>
+                                 <p>HTML,CSS,JAVASCRIPT,JQUERY을 통해 시안과 똑같이 구현할 수 있습니다.</p>
+                             </div>
+                         </div>
+                         <!--                        Service Item End-->
+                         <!--                       Service Item-->
+                         <div class="service-item padd-15">
+                             <div class="service-item-inner">
+                                 <div class="icon"><i class="fa fa-handshake-o"></i></div>
+                                 <h4>Cooperation</h4>
+                                 <p>SVN, Zeplin등을 통해 프로젝트에 원활이 협업할 수있습니다.</p>
+                             </div>
+                         </div>
+                         <!--                        Service Item End-->
+                         <!--                       Service Item-->
+                         <div class="service-item padd-15">
+                             <div class="service-item-inner">
+                                 <div class="icon"><i class="fa fa-users"></i></div>
+                                 <h4>Teamwork</h4>
+                                 <p>의견을 잘 조율하고 타협해서 가고자하는 목표에 차질 없이 갈 수있습니다.</p>
+                             </div>
+                         </div>
+                         <!--                        Service Item End-->
+                         <!--                       Service Item-->
+                         <div class="service-item padd-15">
+                             <div class="service-item-inner">
+                                 <div class="icon"><i class="fa fa-signal"></i></div>
+                                 <h4>Infinite Ability</h4>
+                                 <p>한 포지션에 머무르지 않고 다재다능하게 능력을 발휘 할 수있습니다.</p>
+                             </div>
+                         </div>
+                         <!--                        Service Item End-->
+                     </div>
+                 </div>
+             </section>
+             <!--        Service Section End-->
 
-            <!--            Portfolio Section-->
-            <section class="portfolio section" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Portfolio</h2>
+             <!--            Portfolio Section-->
+             <section class="portfolio section" id="portfolio">
+                 <div class="container">
+                     <div class="row">
+                         <div class="section-title padd-15">
+                             <h2>Portfolio</h2>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <div class="portfolio-filter padd-15">
+                             <button type="button" class="active" data-filter="all">All</button>
+                             <button type="button" data-filter="responsive">Responsive</button>
+                             <button type="button" data-filter="pc">PC</button>
+                             <button type="button" data-filter="mobile">Mobile</button>
+                             <button type="button" data-filter="design">Design</button>
+<!--                             <button type="button" data-filter="wordpress">Wordpress</button>-->
+                         </div>
+                     </div>
+                     <div class="row">
+                    <!--                       Portfolio Item-->
+                    <div class="portfolio-item padd-15" data-category="PC">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/starbucks.png" alt="portfolio">
+                            </div>
+                            <div class="hide">
+                                <img src="images/portfolio/starbucks.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>PC</h4>
+                                <p><a class="portGo" target="_blank" href="images/portfolio/starbucks.png">Preview</a></p>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="portfolio-filter padd-15">
-                            <button type="button" class="active" data-filter="all">All</button>
-                            <button type="button" data-filter="responsive">Responsive</button>
-                            <button type="button" data-filter="pc">PC</button>
-                            <button type="button" data-filter="mobile">Mobile</button>
-                            <button type="button" data-filter="design">Design</button>
-                            <!--                             <button type="button" data-filter="wordpress">Wordpress</button>-->
+                    <!--                       Portfolio Item End-->
+                    <!--                       Portfolio Item-->
+                     <div class="portfolio-item padd-15" data-category="PC">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="images/portfolio/gwangdong.png" alt="portfolio">
+                            </div>
+                            <div class="hide">
+                                <img src="images/portfolio/gwangdong.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>PC</h4>
+                                <p><a class="portGo" target="_blank" href="images/portfolio/gwangdong.png">Preview</a></p>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <!--                       Portfolio Item End-->
+                    <!--                       Portfolio Item-->
+                         <div class="portfolio-item padd-15" data-category="design">
+                             <div class="portfolio-item-inner shadow-dark">
+                                 <div class="portfolio-img">
+                                     <img src="images/portfolio/espoir.png" alt="portfolio">
+                                 </div>
+                                 <div class="hide">
+                                     <img src="images/portfolio/espoir-long.png" alt="portfolio">
+                                 </div>
+                                 <div class="portfolio-info">
+                                     <h4>Design</h4>
+                                     <p><a class="portGo" target="_blank" href="images/portfolio/espoir-long.png">Preview</a></p>
+                                     <div class="icon">
+                                         <i class="fa fa-search"></i>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                    <!--                       Portfolio Item End-->
+                      <!--                       Portfolio Item-->
+                         <div class="portfolio-item padd-15" data-category="design">
+                             <div class="portfolio-item-inner shadow-dark">
+                                 <div class="portfolio-img ">
+                                     <img src="images/portfolio/Dansoon.png" alt="portfolio">
+                                 </div>
+                                 <div class="hide">
+                                     <img src="images/portfolio/Dansoon-long.png" alt="portfolio">
+                                 </div>
+                                 <div class="portfolio-info">
+                                     <h4>Design</h4>
+                                     <p><a href="/images/portfolio/Dansoon-long.png" class="portGo" target="_blank" >Preview</a></p>
+                                     <div class="icon">
+                                         <i class="fa fa-search"></i>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--                       Portfolio Item End-->
+                       <!--                       Portfolio Item-->
+                         <div class="portfolio-item padd-15" data-category="design">
+                             <div class="portfolio-item-inner shadow-dark">
+                                 <div class="portfolio-img">
+                                     <img src="images/portfolio/crossfitt.png" alt="portfolio">
+                                 </div>
+                                 <div class="hide">
+                                     <img src="images/portfolio/crossfitt-long.png" alt="portfolio">
+                                 </div>
+                                 <div class="portfolio-info">
+                                     <h4>Design</h4>
+                                     <p><a class="portGo" target="_blank" href="images/portfolio/crossfitt-long.png">Preview</a></p>
+                                     <div class="icon">
+                                         <i class="fa fa-search"></i>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--                       Portfolio Item End-->
                         <!--                       Portfolio Item-->
-                        <div class="portfolio-item padd-15" data-category="PC">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/starbucks.png" alt="portfolio">
-                                </div>
-                                <div class="hide">
-                                    <img src="images/portfolio/starbucks.png" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>PC</h4>
-                                    <p><a class="portGo" target="_blank"
-                                            href="images/portfolio/starbucks.png">Preview</a></p>
-                                    <div class="icon">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                       Portfolio Item End-->
-                        <!--                       Portfolio Item-->
-                        <div class="portfolio-item padd-15" data-category="PC">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/gwangdong.png" alt="portfolio">
-                                </div>
-                                <div class="hide">
-                                    <img src="images/portfolio/gwangdong.png" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>PC</h4>
-                                    <p><a class="portGo" target="_blank"
-                                            href="images/portfolio/gwangdong.png">Preview</a></p>
-                                    <div class="icon">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                       Portfolio Item End-->
-                        <!--                       Portfolio Item-->
-                        <div class="portfolio-item padd-15" data-category="design">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/espoir.png" alt="portfolio">
-                                </div>
-                                <div class="hide">
-                                    <img src="images/portfolio/espoir-long.png" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Design</h4>
-                                    <p><a class="portGo" target="_blank"
-                                            href="images/portfolio/espoir-long.png">Preview</a></p>
-                                    <div class="icon">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                       Portfolio Item End-->
-                        <!--                       Portfolio Item-->
-                        <div class="portfolio-item padd-15" data-category="design">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img ">
-                                    <img src="images/portfolio/Dansoon.png" alt="portfolio">
-                                </div>
-                                <div class="hide">
-                                    <img src="images/portfolio/Dansoon-long.png" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Design</h4>
-                                    <p><a href="/images/portfolio/Dansoon-long.png" class="portGo"
-                                            target="_blank">Preview</a></p>
-                                    <div class="icon">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                       Portfolio Item End-->
-                        <!--                       Portfolio Item-->
-                        <div class="portfolio-item padd-15" data-category="design">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/crossfitt.png" alt="portfolio">
-                                </div>
-                                <div class="hide">
-                                    <img src="images/portfolio/crossfitt-long.png" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Design</h4>
-                                    <p><a class="portGo" target="_blank"
-                                            href="images/portfolio/crossfitt-long.png">Preview</a></p>
-                                    <div class="icon">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                       Portfolio Item End-->
-                        <!--                       Portfolio Item-->
-                        <div class="portfolio-item padd-15" data-category="responsive">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/1.png" alt="portfolio">
-                                </div>
-                                <div class="hide">
-                                    <img src="images/portfolio/1.png" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Responsive</h4>
-                                    <p><a class="portGo" target="_blank" href="port/rolex/index.html">Preview</a></p>
-                                    <div class="icon">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                       Portfolio Item End-->
-                        <!--                       Portfolio Item-->
-                        <div class="portfolio-item padd-15" data-category="responsive">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <img src="images/portfolio/2.png" alt="portfolio">
-                                </div>
-                                <div class="hide">
-                                    <img src="images/portfolio/2.png" alt="portfolio">
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4>Responsive</h4>
-                                    <p><a class="portGo" target="_blank" href="index.html">Preview</a></p>
-                                    <div class="icon">
-                                        <i class="fa fa-search"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--                       Portfolio Item End-->
-                    </div>
+                         <div class="portfolio-item padd-15" data-category="responsive">
+                             <div class="portfolio-item-inner shadow-dark">
+                                 <div class="portfolio-img">
+                                     <img src="images/portfolio/1.png" alt="portfolio">
+                                 </div>
+                                 <div class="hide">
+                                     <img src="images/portfolio/1.png" alt="portfolio">
+                                 </div>
+                                 <div class="portfolio-info">
+                                     <h4>Responsive</h4>
+                                     <p><a class="portGo" target="_blank" href="port/rolex/index.html">Preview</a></p>
+                                     <div class="icon">
+                                         <i class="fa fa-search"></i>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--                       Portfolio Item End-->
+                         <!--                       Portfolio Item-->
+                         <div class="portfolio-item padd-15" data-category="responsive">
+                             <div class="portfolio-item-inner shadow-dark">
+                                 <div class="portfolio-img">
+                                     <img src="images/portfolio/2.png" alt="portfolio">
+                                 </div>
+                                 <div class="hide">
+                                     <img src="images/portfolio/2.png" alt="portfolio">
+                                 </div>
+                                 <div class="portfolio-info">
+                                     <h4>Responsive</h4>
+                                     <p><a class="portGo" target="_blank" href="index.html">Preview</a></p>
+                                     <div class="icon">
+                                         <i class="fa fa-search"></i>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--                       Portfolio Item End-->
+                         <!--                       Portfolio Item-->
+                         <div class="portfolio-item padd-15" data-category="responsive">
+                             <div class="portfolio-item-inner shadow-dark">
+                                 <div class="portfolio-img">
+                                     <img src="images/portfolio/3.png" alt="portfolio">
+                                 </div>
+                                 <div class="hide">
+                                     <img src="images/portfolio/3.png" alt="portfolio">
+                                 </div>
+                                 <div class="portfolio-info">
+                                     <h4>Responsive</h4>
+                                     <p><a class="portGo" target="_blank" href="port/x-large/01_INDEX.html">Preview</a></p>
+                                     <div class="icon">
+                                         <i class="fa fa-search"></i>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--                       Portfolio Item End-->
+                         <!--                       Portfolio Item-->
+                         <div class="portfolio-item padd-15" data-category="responsive">
+                             <div class="portfolio-item-inner shadow-dark">
+                                 <div class="portfolio-img">
+                                     <img src="images/portfolio/4.png" alt="portfolio">
+                                 </div>
+                                 <div class="hide">
+                                     <img src="images/portfolio/4.png" alt="portfolio">
+                                 </div>
+                                 <div class="portfolio-info">
+                                     <h4>Responsive</h4>
+                                     <p><a class="portGo" target="_blank" href="port/oliveyong/index.html">Preview</a></p>
+                                     <div class="icon">
+                                         <i class="fa fa-search"></i>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--                       Portfolio Item End-->
+                         <!--                       Portfolio Item-->
+                         <div class="portfolio-item padd-15" data-category="responsive">
+                             <div class="portfolio-item-inner shadow-dark">
+                                 <div class="portfolio-img">
+                                     <img src="images/portfolio/5.png" alt="portfolio">
+                                 </div>
+                                 <div class="hide">
+                                     <img src="images/portfolio/5.png" alt="portfolio">
+                                 </div>
+                                 <div class="portfolio-info">
+                                     <h4>Responsive</h4>
+                                     <p><a class="portGo" target="_blank" href="port/guess/02_guess.html">Preview</a></p>
+                                     <div class="icon">
+                                         <i class="fa fa-search"></i>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--                       Portfolio Item End-->
+                          <!--                       Portfolio Item-->
+                         <div class="portfolio-item padd-15" data-category="mobile">
+                             <div class="portfolio-item-inner shadow-dark">
+                                 <div class="portfolio-img">
+                                     <img src="images/portfolio/6.png" alt="portfolio">
+                                 </div>
+                                  <div class="hide">
+                                     <img src="images/portfolio/6.png" alt="portfolio">
+                                 </div>
+                                 <div class="portfolio-info">
+                                     <h4>Mobile</h4>
+                                     <p><a class="portGo" target="_blank" href="port/versace/index.html">Preview</a></p>
+                                     <div class="icon">
+                                         <i class="fa fa-search"></i>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
 
-                </div>
-            </section>
-            <!--            Portfolio Section End-->
-            <!--            Blog Section-->
-            <section class="blog section" id="project">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Latest Project</h2>
-                        </div>
-                    </div>
-                    <div class="row">
+                 </div>
+             </section>
+             <!--            Portfolio Section End-->
+             <!--            Blog Section-->
+             <section class="blog section" id="project">
+                 <div class="container">
+                     <div class="row">
+                         <div class="section-title padd-15">
+                             <h2>Latest Project</h2>
+                         </div>
+                     </div>
+                     <div class="row">
                         <!--Blog Item-->
                         <div class="blog-item padd-15">
                             <div class="blog-item-inner shadow-dark">
@@ -597,22 +669,17 @@
                                 <div class="blog-info">
                                     <h4 class="blog-title">play-able</h4>
                                     <p class="blog-description">
-                                        - HTML, CSS, Jquery 으로 구현<br>
-                                        - Scroll animation, Slick animaition 등 스크립트 적용<br>
-                                        <a class="bl-go" href="/port/playable/index.html" target="_blank">- 사이트
-                                            바로가기</a><br>
+                                       - HTML, CSS, Jquery 으로 구현<br>
+                                       - Scroll animation, Slick animaition 등 스크립트 적용<br>
+                                       <a class="bl-go" href="/port/playable/index.html" target="_blank">- 사이트 바로가기</a><br>
                                     </p>
-                                    <p class="blog-tags">Tags : <a href="javascript:void(0)">PC</a>, <a
-                                            href="javascript:void(0)">PHOTOSHOP</a>, <a
-                                            href="javascript:void(0)">HTML</a>, <a href="javascript:void(0)">CSS</a>, <a
-                                            href="javascript:void(0)">JQUERY</a>, <a
-                                            href="javascript:void(0)">ZEPLIN</a></p>
+                                    <p class="blog-tags">Tags : <a href="javascript:void(0)">PC</a>, <a href="javascript:void(0)">PHOTOSHOP</a>, <a href="javascript:void(0)">HTML</a>, <a href="javascript:void(0)">CSS</a>, <a href="javascript:void(0)">JQUERY</a>, <a href="javascript:void(0)">ZEPLIN</a></p>
                                 </div>
                             </div>
                         </div>
                         <!--Blog Item End-->
-                        <!--Blog Item-->
-                        <div class="blog-item padd-15">
+                         <!--Blog Item-->
+                         <div class="blog-item padd-15">
                             <div class="blog-item-inner shadow-dark">
                                 <div class="blog-img">
                                     <img src="images/blog/ixotive.png" alt="blog">
@@ -623,291 +690,247 @@
                                 <div class="blog-info">
                                     <h4 class="blog-title">POSCO IXOTIVE</h4>
                                     <p class="blog-description">
-                                        - HTML, CSS, Jquery 으로 구현<br>
-                                        - 기존 사이트 성능 개선 및 디자인 리뉴얼<br>
-                                        - SEO 검색 최적화<br>
-                                        - 국문, 영문 추가<br>
-                                        - Scroll animation, Swiper animaition 등 스크립트 적용<br>
-                                        - Media query 적용<br>
-                                        <a class="bl-go" href="https://www.ixotive.com/" target="_blank">- 사이트
-                                            바로가기</a><br>
+                                       - HTML, CSS, Jquery 으로 구현<br>
+                                       - 기존 사이트 성능 개선 및 디자인 리뉴얼<br>
+                                       - SEO 검색 최적화<br>
+                                       - 국문, 영문 추가<br>
+                                       - Scroll animation, Swiper animaition 등 스크립트 적용<br>
+                                       - Media query 적용<br>
+                                       <a class="bl-go" href="https://www.ixotive.com/" target="_blank">- 사이트 바로가기</a><br>
                                     </p>
-                                    <p class="blog-tags">Tags : <a href="javascript:void(0)">RESPONSIVE WEBSITE</a>, <a
-                                            href="javascript:void(0)">PHOTOSHOP</a>, <a
-                                            href="javascript:void(0)">HTML</a>, <a href="javascript:void(0)">CSS</a>, <a
-                                            href="javascript:void(0)">JQUERY</a></p>
+                                    <p class="blog-tags">Tags : <a href="javascript:void(0)">RESPONSIVE WEBSITE</a>, <a href="javascript:void(0)">PHOTOSHOP</a>, <a href="javascript:void(0)">HTML</a>, <a href="javascript:void(0)">CSS</a>, <a href="javascript:void(0)">JQUERY</a></p>
                                 </div>
                             </div>
                         </div>
                         <!--Blog Item End-->
-                        <!--Blog Item-->
-                        <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="images/blog/1.png" alt="blog">
-                                    <div class="blog-date">
-                                        4 dec 2019
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4 class="blog-title">용된다 오피셜 사이트</h4>
-                                    <p class="blog-description">
+                         <!--Blog Item-->
+                         <div class="blog-item padd-15">
+                             <div class="blog-item-inner shadow-dark">
+                                 <div class="blog-img">
+                                     <img src="images/blog/1.png" alt="blog">
+                                     <div class="blog-date">
+                                         4 dec 2019
+                                     </div>
+                                 </div>
+                                 <div class="blog-info">
+                                     <h4 class="blog-title">용된다 오피셜 사이트</h4>
+                                     <p class="blog-description">
                                         - HTML, CSS, Jquery 으로 구현<br>
                                         - Spring boot 구조로써 반응형으로 제작<br>
                                         - Scroll animation, Swiper animaition 등 스크립트 적용<br>
                                         - Media query 적용<br>
-                                        <a class="bl-go" href="http://121.128.193.163/" target="_blank">- 사이트
-                                            바로가기</a><br>
+                                        <a class="bl-go" href="http://121.128.193.163/" target="_blank">- 사이트 바로가기</a><br>
+                                     </p>
+                                     <p class="blog-tags">Tags : <a href="javascript:void(0)">RESPONSIVE WEBSITE</a>, <a href="javascript:void(0)">PHOTOSHOP</a>, <a href="javascript:void(0)">HTML</a>, <a href="javascript:void(0)">CSS</a>, <a href="javascript:void(0)">JQUERY</a>, <a href="javascript:void(0)">JSP</a>, <a href="javascript:void(0)">SPRING BOOT</a></p>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--Blog Item End-->
+                         <!--Blog Item-->
+                         <div class="blog-item padd-15">
+                             <div class="blog-item-inner shadow-dark">
+                                 <div class="blog-img">
+                                     <img src="images/blog/2.png" alt="blog">
+                                     <div class="blog-date">
+                                         4 dec 2019
+                                     </div>
+                                 </div>
+                                 <div class="blog-info">
+                                     <h4 class="blog-title">용된다 쇼핑몰 PC</h4>
+                                     <p class="blog-description">
+                                     - Spring boot 구조로 제작<br>
+                                    - PC 화면과 Mobile 화면을 나누어 진행<br>
+                                    - Zeplin으로 디자이너와 개발자 협업<br>
+                                    - Chrome, IE 9-11, Firefox, Safari에 적용<br>
+                                    - 데이터베이스의 흐름을 파악 후 spring boot 프로젝트로 JQuery, AJAX, JSP 등을 통해 구현<br>
+                                    - 소셜로그인(카카오) 배송 API 연동<br>
+                                    <del><a class="block" href="https://www.yddshop.co.kr/" target="_blank">- 사이트 바로가기(서비스 종료)</a></del>  
+                                     </p>
+                                     <p class="blog-tags">Tags : <a href="javascript:void(0)">PHOTOSHOP</a>, <a href="javascript:void(0)">ZEPLIN</a>, <a href="javascript:void(0)">HTML</a>, <a href="javascript:void(0)">CSS</a>, <a href="javascript:void(0)">JQUERY</a>, <a href="javascript:void(0)">JAVASCRIPT</a>, <a href="javascript:void(0)">AJAX</a>, <a href="javascript:void(0)">JSP</a>, <a href="javascript:void(0)">SVN</a>, <a href="javascript:void(0)">ERDCloud</a>, <a href="javascript:void(0)">MYSQL</a></p>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--Blog Item End-->
+                         <!--Blog Item-->
+                         <div class="blog-item padd-15">
+                             <div class="blog-item-inner shadow-dark">
+                                 <div class="blog-img">
+                                     <img src="images/blog/3.png" alt="blog">
+                                     <div class="blog-date">
+                                         4 dec 2019
+                                     </div>
+                                 </div>
+                                 <div class="blog-info">
+                                     <h4 class="blog-title">용된다 쇼핑몰 MOBILE</h4>
+                                     <p class="blog-description">
+                                     - PC의 기능를 토대로 리딩하여 진행<br>
+                                    - Zeplin으로 디자이너와 개발자 협업<br>
+                                    - 소셜로그인(카카오) 배송 API 연동<br>
+                                    - 하이브리드 앱의 웹 부분을 담당하여 OS 차이에 맞게 CSS, JQuery 등 대응하였으며 Useragaent로 나눠 기능추가로 프로젝트 완료.<br>
+                                    <del><a class="block" href="https://www.yddshop.co.kr/m/" target="_blank">- 사이트 바로가기(서비스 종료)</a></del> 
+                                     </p>
+                                     <p class="blog-tags">Tags : <a href="javascript:void(0)">PHOTOSHOP</a>, <a href="javascript:void(0)">ZEPLIN</a>, <a href="javascript:void(0)">HTML</a>, <a href="javascript:void(0)">CSS</a>, <a href="javascript:void(0)">JQUERY</a>, <a href="javascript:void(0)">JAVASCRIPT</a>, <a href="javascript:void(0)">AJAX</a>, <a href="javascript:void(0)">JSP</a>, <a href="javascript:void(0)">SVN</a>, <a href="javascript:void(0)">ERDCloud</a>, <a href="javascript:void(0)">MYSQL</a></p>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--Blog Item End-->
+                         <!--Blog Item-->
+                         <div class="blog-item padd-15">
+                             <div class="blog-item-inner shadow-dark">
+                                 <div class="blog-img">
+                                     <img src="images/blog/4.png" alt="blog">
+                                     <div class="blog-date">
+                                         4 dec 2019
+                                     </div>
+                                 </div>
+                                 <div class="blog-info">
+                                     <h4 class="blog-title">용된다 쇼핑몰 관리자 페이지</h4>
+                                     <p class="blog-description">
+                                     - Spring boot 구조로 제작<br>
+                                    - 디자인 시안을 통해 HTML, CSS 등으로 퍼블리싱 진행<br>
+                                    - JQuery, AJAX, JSP 등으로 화면단 개발<br>
+                                    - 간단한 DB 쿼리 DML(INSERT, UPDATE, DELETE) 수정<br>
+                                    - 오피셜사이트, 쇼핑몰사이트, 관리자사이트 동시 배포<br>
+                                    
                                     </p>
-                                    <p class="blog-tags">Tags : <a href="javascript:void(0)">RESPONSIVE WEBSITE</a>, <a
-                                            href="javascript:void(0)">PHOTOSHOP</a>, <a
-                                            href="javascript:void(0)">HTML</a>, <a href="javascript:void(0)">CSS</a>, <a
-                                            href="javascript:void(0)">JQUERY</a>, <a href="javascript:void(0)">JSP</a>,
-                                        <a href="javascript:void(0)">SPRING BOOT</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Blog Item End-->
-                        <!--Blog Item-->
-                        <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="images/blog/2.png" alt="blog">
-                                    <div class="blog-date">
-                                        4 dec 2019
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4 class="blog-title">용된다 쇼핑몰 PC</h4>
-                                    <p class="blog-description">
-                                        - Spring boot 구조로 제작<br>
-                                        - PC 화면과 Mobile 화면을 나누어 진행<br>
-                                        - Zeplin으로 디자이너와 개발자 협업<br>
-                                        - Chrome, IE 9-11, Firefox, Safari에 적용<br>
-                                        - 데이터베이스의 흐름을 파악 후 spring boot 프로젝트로 JQuery, AJAX, JSP 등을 통해 구현<br>
-                                        - 소셜로그인(카카오) 배송 API 연동<br>
-                                        <del><a class="block" href="https://www.yddshop.co.kr/" target="_blank">- 사이트
-                                                바로가기(서비스 종료)</a></del>
-                                    </p>
-                                    <p class="blog-tags">Tags : <a href="javascript:void(0)">PHOTOSHOP</a>, <a
-                                            href="javascript:void(0)">ZEPLIN</a>, <a href="javascript:void(0)">HTML</a>,
-                                        <a href="javascript:void(0)">CSS</a>, <a href="javascript:void(0)">JQUERY</a>,
-                                        <a href="javascript:void(0)">JAVASCRIPT</a>, <a
-                                            href="javascript:void(0)">AJAX</a>, <a href="javascript:void(0)">JSP</a>, <a
-                                            href="javascript:void(0)">SVN</a>, <a
-                                            href="javascript:void(0)">ERDCloud</a>, <a
-                                            href="javascript:void(0)">MYSQL</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Blog Item End-->
-                        <!--Blog Item-->
-                        <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="images/blog/3.png" alt="blog">
-                                    <div class="blog-date">
-                                        4 dec 2019
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4 class="blog-title">용된다 쇼핑몰 MOBILE</h4>
-                                    <p class="blog-description">
-                                        - PC의 기능를 토대로 리딩하여 진행<br>
-                                        - Zeplin으로 디자이너와 개발자 협업<br>
-                                        - 소셜로그인(카카오) 배송 API 연동<br>
-                                        - 하이브리드 앱의 웹 부분을 담당하여 OS 차이에 맞게 CSS, JQuery 등 대응하였으며 Useragaent로 나눠 기능추가로 프로젝트
-                                        완료.<br>
-                                        <del><a class="block" href="https://www.yddshop.co.kr/m/" target="_blank">- 사이트
-                                                바로가기(서비스 종료)</a></del>
-                                    </p>
-                                    <p class="blog-tags">Tags : <a href="javascript:void(0)">PHOTOSHOP</a>, <a
-                                            href="javascript:void(0)">ZEPLIN</a>, <a href="javascript:void(0)">HTML</a>,
-                                        <a href="javascript:void(0)">CSS</a>, <a href="javascript:void(0)">JQUERY</a>,
-                                        <a href="javascript:void(0)">JAVASCRIPT</a>, <a
-                                            href="javascript:void(0)">AJAX</a>, <a href="javascript:void(0)">JSP</a>, <a
-                                            href="javascript:void(0)">SVN</a>, <a
-                                            href="javascript:void(0)">ERDCloud</a>, <a
-                                            href="javascript:void(0)">MYSQL</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Blog Item End-->
-                        <!--Blog Item-->
-                        <div class="blog-item padd-15">
-                            <div class="blog-item-inner shadow-dark">
-                                <div class="blog-img">
-                                    <img src="images/blog/4.png" alt="blog">
-                                    <div class="blog-date">
-                                        4 dec 2019
-                                    </div>
-                                </div>
-                                <div class="blog-info">
-                                    <h4 class="blog-title">용된다 쇼핑몰 관리자 페이지</h4>
-                                    <p class="blog-description">
-                                        - Spring boot 구조로 제작<br>
-                                        - 디자인 시안을 통해 HTML, CSS 등으로 퍼블리싱 진행<br>
-                                        - JQuery, AJAX, JSP 등으로 화면단 개발<br>
-                                        - 간단한 DB 쿼리 DML(INSERT, UPDATE, DELETE) 수정<br>
-                                        - 오피셜사이트, 쇼핑몰사이트, 관리자사이트 동시 배포<br>
+                                     <p class="blog-tags">Tags : <a href="javascript:void(0)">PHOTOSHOP</a>, <a href="javascript:void(0)">ZEPLIN</a>, <a href="javascript:void(0)">HTML</a>, <a href="javascript:void(0)">CSS</a>, <a href="javascript:void(0)">JQUERY</a>, <a href="javascript:void(0)">JAVASCRIPT</a>, <a href="javascript:void(0)">AJAX</a>, <a href="javascript:void(0)">JSP</a>, <a href="javascript:void(0)">SVN</a>, <a href="javascript:void(0)">ERDCloud</a>, <a href="javascript:void(0)">MYSQL</a></p>
+                                 </div>
+                             </div>
+                         </div>
+                         <!--Blog Item End-->
+                     </div>
+                 </div>
+             </section>
 
-                                    </p>
-                                    <p class="blog-tags">Tags : <a href="javascript:void(0)">PHOTOSHOP</a>, <a
-                                            href="javascript:void(0)">ZEPLIN</a>, <a href="javascript:void(0)">HTML</a>,
-                                        <a href="javascript:void(0)">CSS</a>, <a href="javascript:void(0)">JQUERY</a>,
-                                        <a href="javascript:void(0)">JAVASCRIPT</a>, <a
-                                            href="javascript:void(0)">AJAX</a>, <a href="javascript:void(0)">JSP</a>, <a
-                                            href="javascript:void(0)">SVN</a>, <a
-                                            href="javascript:void(0)">ERDCloud</a>, <a
-                                            href="javascript:void(0)">MYSQL</a></p>
-                                </div>
-                            </div>
-                        </div>
-                        <!--Blog Item End-->
-                    </div>
-                </div>
-            </section>
+             <!--            Blog Section End-->
 
-            <!--            Blog Section End-->
+             <!--                Contact Section-->
+             <section class="contact section" id="contact">
+                 <div class="container">
+                     <div class="row">
+                         <div class="section-title padd-15">
+                             <h2>Contact Me</h2>
+                         </div>
+                     </div>
+                     <div class="row">
+                         <!--contact-info-item-->
+                         <div class="contact-info-item padd-15">
+                             <div class="icon"><i class="fa fa-phone"></i></div>
+                             <h4>Call Me on</h4>
+                             <p>010 2474 6795</p>
+                         </div>
+                         <!--contact-info-item End-->
+                         <!--contact-info-item-->
+                         <div class="contact-info-item padd-15">
+                             <div class="icon"><i class="fa fa-map-marker"></i></div>
+                             <h4>Home</h4>
+                             <p>256, Hoam-ro, Uijeongbu-si, Republic of Korea</p>
+                         </div>
+                         <!--contact-info-item End-->
+                         <!--contact-info-item-->
+                         <div class="contact-info-item padd-15">
+                             <div class="icon"><i class="fa fa-envelope"></i></div>
+                             <h4>Email</h4>
+                             <p>gasina85@gmail.com</p>
+                         </div>
+                         <!--contact-info-item End-->
+                     </div>
+                     <!--                        Contact Form-->
+                     <div class="row">
+                         <form class="contact-form padd-15">
+                             <div class="row">
+                                 <div class="form-item col-6 padd-15">
+                                     <div class="form-group">
+                                         <input id="name" type="text"  name="name" class="form-control" placeholder="Name">
+                                     </div>
+                                 </div>
+                                 <div class="form-item col-6 padd-15">
+                                     <div class="form-group">
+                                         <input id="email" type="text" name="email" class="form-control" placeholder="Email">
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                                 <div class="form-item col-12 padd-15">
+                                     <div class="form-group">
+                                         <input id="phone" type="text" name="phone" class="form-control" placeholder="Subject">
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                                 <div class="form-item col-12 padd-15">
+                                     <div class="form-group">
+                                         <textarea id="message" name="message" class="form-control" placeholder="Your Message..."></textarea>
+                                     </div>
+                                 </div>
+                             </div>
+                             <div class="row">
+                                 <div class="form-item col-12 padd-15">
+                                     <button type="button" name="submit" class="btn send-email">Send Message</button>
+                                 </div>
+                             </div>
+                         </form>
+                     </div>
+                     <!--                        Contact Form End-->
+                 </div>
+             </section>
+             <!--                Contact Section End-->
 
-            <!--                Contact Section-->
-            <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>Contact Me</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!--contact-info-item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-phone"></i></div>
-                            <h4>Call Me on</h4>
-                            <p>010 2474 6795</p>
-                        </div>
-                        <!--contact-info-item End-->
-                        <!--contact-info-item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-map-marker"></i></div>
-                            <h4>Home</h4>
-                            <p>256, Hoam-ro, Uijeongbu-si, Republic of Korea</p>
-                        </div>
-                        <!--contact-info-item End-->
-                        <!--contact-info-item-->
-                        <div class="contact-info-item padd-15">
-                            <div class="icon"><i class="fa fa-envelope"></i></div>
-                            <h4>Email</h4>
-                            <p>gasina85@gmail.com</p>
-                        </div>
-                        <!--contact-info-item End-->
-                    </div>
-                    <!--                        Contact Form-->
-                    <div class="row">
-                        <form class="contact-form padd-15">
-                            <div class="row">
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input id="name" type="text" name="name" class="form-control"
-                                            placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="form-item col-6 padd-15">
-                                    <div class="form-group">
-                                        <input id="email" type="text" name="email" class="form-control"
-                                            placeholder="Email">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <input id="phone" type="text" name="phone" class="form-control"
-                                            placeholder="Subject">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <div class="form-group">
-                                        <textarea id="message" name="message" class="form-control"
-                                            placeholder="Your Message..."></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="form-item col-12 padd-15">
-                                    <button type="button" name="submit" class="btn send-email">Send Message</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <!--                        Contact Form End-->
-                </div>
-            </section>
-            <!--                Contact Section End-->
+         </div>
+         <!--   Main Content   End   -->
+     </div>
+     <!--Main Container-->
 
-        </div>
-        <!--   Main Content   End   -->
-    </div>
-    <!--Main Container-->
+     <!--   Light box-->
+     <div class="lightbox">
+         <div class="lightbox-content">
+             <div class="preview"><a id="previewGo" href="port/x-large/01_INDEX.html" target="_blank">바로가기</a></div>
+             <div class="lightbox-close">&times;</div>
+             <img src="images/portfolio/2.png" onclick="nextItem()" class="lightbox-img">
+             <div class="lightbox-caption">
+                 <div class="caption-text"></div>
 
-    <!--   Light box-->
-    <div class="lightbox">
-        <div class="lightbox-content">
-            <div class="preview"><a id="previewGo" href="port/x-large/01_INDEX.html" target="_blank">바로가기</a></div>
-            <div class="lightbox-close">&times;</div>
-            <img src="images/portfolio/2.png" onclick="nextItem()" class="lightbox-img">
-            <div class="lightbox-caption">
-                <div class="caption-text"></div>
+                 <div class="caption-counter"></div>
+             </div>
+         </div>
+         <div class="lightbox-controls">
 
-                <div class="caption-counter"></div>
-            </div>
-        </div>
-        <div class="lightbox-controls">
+             <div class="prev-item" onclick="prevItem()" ><a href="javascript:void(0);"  style="cursor:pointer;"><i class="fa fa-angle-left"></i></a></div>
+             <div class="next-item" onclick="nextItem()" ><a href="javascript:void(0);"  style="cursor:pointer;"><i class="fa fa-angle-right"></i></a></div>
+         </div>
+     </div>
+     
+     <!--   Light box End-->
 
-            <div class="prev-item" onclick="prevItem()"><a href="javascript:void(0);" style="cursor:pointer;"><i
-                        class="fa fa-angle-left"></i></a></div>
-            <div class="next-item" onclick="nextItem()"><a href="javascript:void(0);" style="cursor:pointer;"><i
-                        class="fa fa-angle-right"></i></a></div>
-        </div>
-    </div>
+     <!--Live Style Switcher - Demo Only-->
+     <div class="style-switcher">
+         <div class="toggle-style-switcher">
+             <i class="fa fa-cog fa-spin"></i>
+         </div>
+         <h5>Style Switcher</h5>
+         <ul>
+             <li><a href="javascript:void(0);" title="pink" style="background-color:#ec1839" onclick="setActiveStyle('pink')"></a></li>
+             <li><a href="javascript:void(0);" title="blue" style="background-color:#2196f3" onclick="setActiveStyle('blue')"></a></li>
+             <li><a href="javascript:void(0);" title="orange" style="background-color:#fa5b0f" onclick="setActiveStyle('orange')"></a></li>
+             <li><a href="javascript:void(0);" title="yellow" style="background-color:#ffb400" onclick="setActiveStyle('yellow')"></a></li>
+             <li><a href="javascript:void(0);" title="green" style="background-color:#72b626" onclick="setActiveStyle('green')"></a></li>
+         </ul>
+         <h5>Body Skin</h5>
+         <label>
+             <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
+             Light
+         </label>
+         <label>
+             <input type="radio" class="body-skin" name="body-style" value="dark">
+             Dark
+         </label>
+     </div>
+     <!--Live Style Switcher - Demo Only End-->
+     <!-- js -->
+     <script desfer src="js/script.js"></script>
+     <!-- Live Style js -->
+     <script  src="js/styleSwitcher.js"></script>
 
-    <!--   Light box End-->
+ </body>
 
-    <!--Live Style Switcher - Demo Only-->
-    <div class="style-switcher">
-        <div class="toggle-style-switcher">
-            <i class="fa fa-cog fa-spin"></i>
-        </div>
-        <h5>Style Switcher</h5>
-        <ul>
-            <li><a href="javascript:void(0);" title="pink" style="background-color:#ec1839"
-                    onclick="setActiveStyle('pink')"></a></li>
-            <li><a href="javascript:void(0);" title="blue" style="background-color:#2196f3"
-                    onclick="setActiveStyle('blue')"></a></li>
-            <li><a href="javascript:void(0);" title="orange" style="background-color:#fa5b0f"
-                    onclick="setActiveStyle('orange')"></a></li>
-            <li><a href="javascript:void(0);" title="yellow" style="background-color:#ffb400"
-                    onclick="setActiveStyle('yellow')"></a></li>
-            <li><a href="javascript:void(0);" title="green" style="background-color:#72b626"
-                    onclick="setActiveStyle('green')"></a></li>
-        </ul>
-        <h5>Body Skin</h5>
-        <label>
-            <input type="radio" class="body-skin" name="body-style" value="light" checked="true">
-            Light
-        </label>
-        <label>
-            <input type="radio" class="body-skin" name="body-style" value="dark">
-            Dark
-        </label>
-    </div>
-    <!--Live Style Switcher - Demo Only End-->
-    <!-- js -->
-    <script desfer src="js/script.js"></script>
-    <!-- Live Style js -->
-    <script src="js/styleSwitcher.js"></script>
-
-</body>
-
-</html>
+ </html>

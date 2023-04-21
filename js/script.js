@@ -284,7 +284,7 @@ lightbox.addEventListener("click",function(event){
                     };
                 
                 
-    emailjs.send('service_hguli8f', 'template_476nj1f', templateParams)
+    emailjs.send('gasina85', 'template_476nj1f', templateParams)
     //emailjs.send('service ID', 'template ID', 보낼 내용이 담긴 객체)
             .then(function(response) {
                 console.log('SUCCESS!', response.status, response.text);
