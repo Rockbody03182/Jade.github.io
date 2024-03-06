@@ -103,51 +103,37 @@ lightboxPreview.addEventListener("click", function () {
   if (itemIndex == 0) {
     document
       .getElementById("previewGo")
-      .setAttribute("href", "https://sharp-heisenberg-3a8df0.netlify.app/");
+      .setAttribute("href", "index.html");
+
   } else if (itemIndex == 1) {
     document
       .getElementById("previewGo")
-      .setAttribute("href", "port/gwangdong/main.html");
+      .setAttribute("href", "https://sharp-heisenberg-3a8df0.netlify.app/");
   } else if (itemIndex == 2) {
     document
       .getElementById("previewGo")
-      .setAttribute("href", "images/portfolio/espoir-long.png");
+      .setAttribute("href", "port/gwangdong/main.html");
+
   } else if (itemIndex == 3) {
     document
       .getElementById("previewGo")
-      .setAttribute("href", "images/portfolio/Dansoon-long.png");
+      .setAttribute("href", "images/portfolio/espoir-long.png");
+
   } else if (itemIndex == 4) {
     document
       .getElementById("previewGo")
-      .setAttribute("href", "images/portfolio/crossfitt-long.png");
+      .setAttribute("href", "images/portfolio/Dansoon-long.png");
   } else if (itemIndex == 5) {
     document
       .getElementById("previewGo")
-      .setAttribute("href", "port/rolex/index.html");
+      .setAttribute("href", "images/portfolio/crossfitt-long.png");
+
   } else if (itemIndex == 6) {
-    document.getElementById("previewGo").setAttribute("href", "index.html");
-  } else if (itemIndex == 7) {
     document
-      .getElementById("previewGo")
-      .setAttribute("href", "port/x-large/01_INDEX.html");
-  } else if (itemIndex == 8) {
-    document
-      .getElementById("previewGo")
-      .setAttribute("href", "port/oliveyong/index.html");
-  } else if (itemIndex == 9) {
-    document
-      .getElementById("previewGo")
-      .setAttribute("href", "port/guess/02_guess.html");
-  } else if (itemIndex == 10) {
-    document
-      .getElementById("previewGo")
-      .setAttribute("href", "port/versace/index.html");
-  } else {
-    alert("준비중입니다.");
-    document
-      .getElementById("previewGo")
-      .removeAttribute("href", "port/versace/index.html");
+      .getElementById("previewGo")      
+      .setAttribute("href", "port/rolex/index.html");
   }
+    
   // if(itemIndex == 0){
   //     document.getElementById('previewGo').setAttribute('href','images/portfolio/espoir-long.png');
 
@@ -231,7 +217,7 @@ function showSection(element) {
   }
   const target = element.getAttribute("href").split("#")[1];
 
-  // console.log(target)
+  console.log(target)
   document.querySelector("#" + target).classList.add("active");
 }
 
@@ -246,7 +232,7 @@ function updateNav(element) {
       navList[i].querySelector("a").classList.add("active");
     }
   }
-  // console.log(element.getAttribute("href").split("#")[1])
+  console.log(element.getAttribute("href").split("#")[1])
 }
 
 document.querySelector(".hire-me").addEventListener("click", function () {
